@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammed Shamil P K | AI/ML Engineer</title>
+    <meta name="description"
+        content="Portfolio of Muhammed Shamil P K — AI/ML Engineer specializing in LLMs, RAG pipelines, prompt engineering, and scalable AI systems.">
+    <meta name="keywords" content="AI Engineer, ML Engineer, LLM, RAG, Python, FastAPI, LangChain, Portfolio">
+    <meta name="author" content="Muhammed Shamil P K">
+    <meta property="og:title" content="Muhammed Shamil P K | AI/ML Engineer">
+    <meta property="og:description"
+        content="Building intelligent, scalable AI solutions using LLMs and modern ML technologies.">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ========== SCROLL PROGRESS BAR ========== -->
+    <div id="scroll-progress"></div>
+
+    <!-- ========== ANIMATED GRID BACKGROUND ========== -->
+    <div class="animated-grid-bg"></div>
+
+    <!-- ========== BACKGROUND BLOBS ========== -->
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- ========== PARTICLES ========== -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- ========== NAVBAR ========== -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="nav-logo" style="text-transform: lowercase;">shamil.online</a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <a href="#contact" class="btn btn-hire">Let's Connect</a>
+
+            <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-drawer" id="mobile-drawer">
+        <button class="drawer-close" id="drawer-close"><i class="fas fa-times"></i></button>
+        <nav class="drawer-nav">
+            <a href="#home" class="drawer-link">Home</a>
+            <a href="#about" class="drawer-link">About</a>
+            <a href="#skills" class="drawer-link">Skills</a>
+            <a href="#projects" class="drawer-link">Projects</a>
+            <a href="#services" class="drawer-link">Services</a>
+            <a href="#contact" class="drawer-link">Contact</a>
+        </nav>
+    </div>
+    <div class="drawer-overlay" id="drawer-overlay"></div>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section id="home" class="hero section">
+        <div class="container hero-container">
+
+            <!-- Left Content -->
+            <div class="hero-left reveal-left">
+
+
+                <h1 class="hero-name">Hi, I'm <br><span class="gradient-text">Muhammed Shamil P K</span></h1>
+
+                <h2 class="hero-role">
+                    I'm a <span class="typing-wrap"><span class="typing-text"></span><span
+                            class="typing-cursor">|</span></span>
+                </h2>
+
+                <div class="hero-current-status">
+                    <span class="status-indicator"><span class="pulse-dot-green"></span></span>
+                    <div class="status-content">
+                        <strong>AI Mentor at Excape AI</strong>
+                        <span class="status-subtext">Currently Working at Excape AI</span>
+                    </div>
+                </div>
+
+                <p class="hero-bio">Building intelligent, scalable AI solutions using LLMs and modern ML technologies —
+                    bridging research and real-world deployment.</p>
+
+                <div class="hero-socials">
+                    <a href="https://www.linkedin.com/in/muhammed-shamilpk-mpd" target="_blank" class="social-icon-btn"
+                        aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/Muhammedshamilpk" target="_blank" class="social-icon-btn"
+                        aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="mailto:muhammedshamilpkmpd@gmail.com" class="social-icon-btn" aria-label="Email"><i
+                            class="fas fa-envelope"></i></a>
+                </div>
+
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-outline"><i class="fas fa-paper-plane"></i> Get In Touch</a>
+                </div>
+            </div>
+
+            <!-- Right Content: Profile Visual -->
+            <div class="hero-right reveal-right">
+                <div class="hero-image-wrapper">
+                    <div class="hero-avatar">
+                        <img src="assets/shamil.jpeg" alt="Muhammed Shamil P K" class="profile-photo"
+                            onerror="this.src='https://via.placeholder.com/220/1e293b/8CAFCB?text=Photo'">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========== ABOUT SECTION ========== -->
+    <section id="about" class="about section">
+        <div class="container about-container">
+
+            <!-- Left: Image Card -->
+            <div class="about-image-col reveal-left">
+                <div class="about-image-card glass-card">
+                    <img src="assets/shamil.jpeg" alt="Muhammed Shamil P K" class="about-photo"
+                        onerror="this.src='https://via.placeholder.com/160/1e293b/8CAFCB?text=Photo'">
+                </div>
+            </div>
+
+            <!-- Right: Text Content -->
+            <div class="about-text-col reveal-right">
+                <div class="section-eyebrow">About Me</div>
+                <h2 class="section-title">AI/ML Engineer & <br><span class="gradient-text">AI Mentor</span>
+                </h2>
+                <p class="about-description">I'm an AI/ML Engineer and AI Mentor at EXCAPE.AI, focused on building intelligent systems that transform complex business problems into scalable, real-world solutions.</p>
+                <p class="about-description">With a strong foundation in Artificial Intelligence, Machine Learning, and Data Science, I specialize in LLM integration, RAG pipeline architecture, and production-grade AI deployment. My work is centered around creating systems that are not just innovative—but practical, efficient, and ready for real-world impact.</p>
+
+                <div class="info-grid">
+                    <div class="info-card glass-card">
+                        <i class="fas fa-user icon-accent"></i>
+                        <div>
+                            <span class="info-label">Name</span>
+                            <span class="info-value">Muhammed Shamil P K</span>
+                        </div>
+                    </div>
+                    <div class="info-card glass-card">
+                        <i class="fas fa-briefcase icon-accent"></i>
+                        <div>
+                            <span class="info-label">Role</span>
+                            <span class="info-value">AI Mentor</span>
+                        </div>
+                    </div>
+                    <div class="info-card glass-card">
+                        <i class="fas fa-map-marker-alt icon-accent"></i>
+                        <div>
+                            <span class="info-label">Location</span>
+                            <span class="info-value">Kerala, India</span>
+                        </div>
+                    </div>
+                    <div class="info-card glass-card">
+                        <i class="fas fa-circle-check icon-accent"></i>
+                        <div>
+                            <span class="info-label">Status</span>
+                            <span class="info-value">Active in Role</span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ========== SKILLS SECTION ========== -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <div class="section-eyebrow center">My Expertise</div>
+                <h2 class="section-title center">Skills & <span class="gradient-text">Technologies</span></h2>
+                <p class="section-subtitle center">A curated set of tools, frameworks, and techniques I use to build
+                    intelligent systems.</p>
+            </div>
+
+            <!-- Skill Category Cards with Progress Bars -->
+            <div class="skills-categories reveal-up">
+
+                <div class="skill-cat-card glass-card">
+                    <div class="skill-cat-header">
+                        <div class="skill-cat-icon"><i class="fas fa-brain"></i></div>
+                        <h3>Generative AI & LLMs</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li><i class="fas fa-check-circle check-icon"></i> LLM Integration & Fine-Tuning</li>
+                        <li><i class="fas fa-check-circle check-icon"></i> Prompt Engineering</li>
+                        <li><i class="fas fa-check-circle check-icon"></i> RAG Systems (LlamaIndex, Pinecone)</li>
+                        <li><i class="fas fa-check-circle check-icon"></i> Agentic AI Workflows (CrewAI)</li>
+                        <li><i class="fas fa-check-circle check-icon"></i> OpenAI GPTs, Claude, Gemini</li>
+                    </ul>
+                </div>
+
+                <div class="skill-cat-card glass-card">
+                    <div class="skill-cat-header">
+                        <div class="skill-cat-icon"><i class="fas fa-code"></i></div>
+                        <h3>ML Frameworks & Python</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li><i class="fas fa-check-circle check-icon"></i> Python & FastAPI Backend</li>
+                        <li><i class="fas fa-check-circle check-icon"></i> PyTorch & scikit-learn</li>
+                        <li><i class="fas fa-check-circle check-icon"></i> LangChain & LlamaIndex</li>
+                        <li><i class="fas fa-check-circle check-icon"></i> Hugging Face Transformers</li>
+                        <li><i class="fas fa-check-circle check-icon"></i> NLP & Text Analytics</li>
+                    </ul>
+                </div>
+
+                <div class="skill-cat-card glass-card">
+                    <div class="skill-cat-header">
+                        <div class="skill-cat-icon"><i class="fas fa-database"></i></div>
+                        <h3>MLOps & Tools</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li><i class="fas fa-check-circle check-icon"></i> Docker Containerization</li>
+                        <li><i class="fas fa-check-circle check-icon"></i> Vector Databases (FAISS, Chroma)</li>
+                        <li><i class="fas fa-check-circle check-icon"></i> PostgreSQL & Relational DBs</li>
+                        <li><i class="fas fa-check-circle check-icon"></i> Streamlit Dashboards</li>
+                        <li><i class="fas fa-check-circle check-icon"></i> Git & Version Control</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Tech Tags Grid -->
+            <div class="tech-tags reveal-up">
+                <div class="tech-tag"><i class="fab fa-python"></i> Python</div>
+                <div class="tech-tag"><i class="fas fa-bolt"></i> FastAPI</div>
+                <div class="tech-tag"><i class="fas fa-link"></i> LangChain</div>
+                <div class="tech-tag"><i class="fas fa-database"></i> PostgreSQL</div>
+                <div class="tech-tag"><i class="fab fa-docker"></i> Docker</div>
+                <div class="tech-tag"><i class="far fa-smile"></i> Hugging Face</div>
+                <div class="tech-tag"><i class="fas fa-search"></i> FAISS</div>
+                <div class="tech-tag"><i class="fab fa-react"></i> React</div>
+                <div class="tech-tag"><i class="fas fa-stream"></i> Streamlit</div>
+                <div class="tech-tag"><i class="fab fa-github"></i> GitHub</div>
+                <div class="tech-tag"><i class="fas fa-server"></i> Llama</div>
+                <div class="tech-tag"><i class="fas fa-microchip"></i> Groq API</div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ========== PROJECTS SECTION ========== -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <div class="section-eyebrow center">My Work</div>
+                <h2 class="section-title center">Featured <span class="gradient-text">Projects</span></h2>
+                <p class="section-subtitle center">A selection of projects where I've applied AI/ML engineering to solve
+                    real-world problems.</p>
+            </div>
+
+            <!-- Filter Tabs -->
+            <div class="project-filters reveal-up">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="rag">RAG</button>
+                <button class="filter-btn" data-filter="ai">AI Platform</button>
+                <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid reveal-up">
+
+                <!-- Project 1: Fin Book -->
+                <div class="project-card glass-card" data-category="fullstack">
+                    <div class="project-card-top">
+                        <div class="project-icon-box"><i class="fas fa-chart-line"></i></div>
+                        <div class="project-tags-top">
+                            <span class="proj-cat-tag">Full Stack</span>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Fin Book</h3>
+                    <p class="project-desc">A comprehensive financial analytics dashboard with role-based access control
+                        (RBAC) for Viewer, Analyst, and Admin roles. Provides deep data insights and secure financial
+                        management.</p>
+                    <div class="project-tech-stack">
+                        <span class="project-tech">FastAPI</span>
+                        <span class="project-tech">React</span>
+                        <span class="project-tech">PostgreSQL</span>
+                        <span class="project-tech">RBAC</span>
+                    </div>
+                    <div class="project-card-footer">
+                        <a href="https://github.com/Muhammedshamilpk/Fin-Book.git" target="_blank" class="project-link"><i class="fab fa-github"></i> GitHub Repo <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 2: MatrixLead.ai -->
+                <div class="project-card glass-card featured-project" data-category="ai">
+                    <div class="project-card-top">
+                        <div class="project-icon-box"><i class="fas fa-robot"></i></div>
+                        <div class="project-tags-top">
+                            <span class="proj-cat-tag">AI Platform</span>
+                            <span class="proj-cat-tag popular-tag">Featured</span>
+                        </div>
+                    </div>
+                    <h3 class="project-title">MatrixLead.ai</h3>
+                    <p class="project-desc">An AI-powered B2B lead scoring platform that dramatically reduces latency
+                        and improves scoring accuracy using modern LLM capabilities, RAG architecture, and real-time
+                        Groq API inference.</p>
+                    <div class="project-tech-stack">
+                        <span class="project-tech">Llama</span>
+                        <span class="project-tech">Groq API</span>
+                        <span class="project-tech">RAG</span>
+                        <span class="project-tech">LangChain</span>
+                    </div>
+                    <div class="project-card-footer">
+                        <a href="https://github.com/Muhammedshamilpk/MatrixLead.ai.git" target="_blank" class="project-link"><i class="fab fa-github"></i> GitHub Repo <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 3: Askify -->
+                <div class="project-card glass-card" data-category="rag">
+                    <div class="project-card-top">
+                        <div class="project-icon-box"><i class="fas fa-comments"></i></div>
+                        <div class="project-tags-top">
+                            <span class="proj-cat-tag">RAG</span>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Askify</h3>
+                    <p class="project-desc">A RAG-based intelligent chatbot capable of handling multi-document context.
+                        Provides precise Q&A through FAISS vector similarity search and transformer-based embeddings.
+                    </p>
+                    <div class="project-tech-stack">
+                        <span class="project-tech">FAISS</span>
+                        <span class="project-tech">Hugging Face</span>
+                        <span class="project-tech">NLP</span>
+                        <span class="project-tech">Python</span>
+                    </div>
+                    <div class="project-card-footer">
+                        <a href="https://github.com/Muhammedshamilpk/ASKfy.ai.git" target="_blank" class="project-link"><i class="fab fa-github"></i> GitHub Repo <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SERVICES SECTION ========== -->
+    <section id="services" class="services section">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <div class="section-eyebrow center">What I Offer</div>
+                <h2 class="section-title center">My <span class="gradient-text">Services</span></h2>
+                <p class="section-subtitle center">End-to-end AI/ML services — from consulting to deployment.</p>
+            </div>
+
+            <div class="services-grid reveal-up">
+
+                <div class="service-card glass-card popular-service">
+
+                    <div class="service-icon-box"><i class="fas fa-brain"></i></div>
+                    <h3>AI Solution Development</h3>
+                    <p>End-to-end design and development of custom AI models and systems tailored to solve specific
+                        business challenges at scale.</p>
+                    <a href="#contact" class="service-link">Get Started <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card glass-card">
+                    <div class="service-icon-box"><i class="fas fa-robot"></i></div>
+                    <h3>LLM Integration & Automation</h3>
+                    <p>Integrating large language models into your existing workflows and systems to automate complex
+                        text, data, and reasoning tasks.</p>
+                    <a href="#contact" class="service-link">Get Started <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card glass-card">
+                    <div class="service-icon-box"><i class="fas fa-server"></i></div>
+                    <h3>API Development</h3>
+                    <p>Designing and deploying robust, high-performance FastAPI backends with robust architecture,
+                        authentication, and AI-powered endpoints.</p>
+                    <a href="#contact" class="service-link">Get Started <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card glass-card">
+                    <div class="service-icon-box"><i class="fas fa-chart-bar"></i></div>
+                    <h3>Data Science & Analytics</h3>
+                    <p>Extracting actionable insights from complex datasets using advanced statistical analysis and
+                        machine learning to drive informed decisions.</p>
+                    <a href="#contact" class="service-link">Get Started <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card glass-card">
+                    <div class="service-icon-box"><i class="fas fa-lightbulb"></i></div>
+                    <h3>AI Consulting</h3>
+                    <p>Strategic guidance on evaluating, planning, and implementing artificial intelligence initiatives
+                        to achieve your technological goals.</p>
+                    <a href="#contact" class="service-link">Get Started <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT SECTION ========== -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <div class="section-eyebrow center">Get In Touch</div>
+                <h2 class="section-title center">Contact <span class="gradient-text">Me</span></h2>
+                <p class="section-subtitle center">Have a project in mind or want to collaborate? Let's make something
+                    great together.</p>
+            </div>
+
+            <div class="contact-container">
+
+                <!-- Left: Info Column -->
+                <div class="contact-info reveal-left">
+                    <div class="contact-info-item">
+                        <div class="contact-icon-box"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-info-text">
+                            <span class="contact-info-label">Email</span>
+                            <a href="mailto:muhammedshamilpkmpd@gmail.com"
+                                class="contact-info-value">muhammedshamilpkmpd@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-icon-box"><i class="fas fa-phone"></i></div>
+                        <div class="contact-info-text">
+                            <span class="contact-info-label">Phone</span>
+                            <a href="tel:+919048795432" class="contact-info-value">+91 90487 95432</a>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-icon-box"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="contact-info-text">
+                            <span class="contact-info-label">Location</span>
+                            <span class="contact-info-value">Kerala, India</span>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-icon-box"><i class="fas fa-circle-check"></i></div>
+                        <div class="contact-info-text">
+                            <span class="contact-info-label">Work Status</span>
+                            <span class="contact-info-value open-status">Active in Role</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-connect">
+                        <h4>Connect With Me</h4>
+                        <div class="connect-buttons">
+                            <a href="https://www.linkedin.com/in/muhammed-shamilpk-mpd" target="_blank"
+                                class="connect-btn linkedin-btn">
+                                <i class="fab fa-linkedin-in"></i> LinkedIn
+                            </a>
+                            <a href="https://github.com/Muhammedshamilpk" target="_blank"
+                                class="connect-btn github-btn">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Form -->
+                <div class="contact-form-wrapper reveal-right">
+                    <form id="contactForm" class="contact-form glass-card">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="form-name">Your Name</label>
+                                <input type="text" id="form-name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-email">Your Email</label>
+                                <input type="email" id="form-email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-subject">Subject</label>
+                            <input type="text" id="form-subject" name="subject">
+                        </div>
+                        <div class="form-group">
+                            <label for="form-message">Message</label>
+                            <textarea id="form-message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit" id="submit-btn">
+                            <span>Send Message</span> <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ========== BACK TO TOP ========== -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- ========== CUSTOM CURSOR ========== -->
+    <div class="custom-cursor-dot" id="cursor-dot"></div>
+    <div class="custom-cursor-ring" id="cursor-ring"></div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
