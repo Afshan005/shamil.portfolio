@@ -96,11 +96,12 @@
        TYPING EFFECT
     ====================================== */
     const typingEl = document.querySelector('.typing-text');
+    const typingArticleEl = document.querySelector('.typing-article');
     const words = [
-        'Python Developer',
-        'AI/ML Engineer',
-        'AI Mentor',
-        'Data Analyst'
+        'a Python Developer',
+        'an AI/ML Engineer',
+        'an AI Mentor',
+        'a Data Analyst'
     ];
 
     let wordIdx = 0;
@@ -111,6 +112,13 @@
         if (!typingEl) return;
 
         const word = words[wordIdx];
+
+        // Update article if we are at the very start of a word
+        if (typingArticleEl && charIdx === 0 && !isDeleting) {
+            const firstChar = word.charAt(0).toLowerCase();
+            const vowels = ['a', 'e', 'i', 'o', 'u'];
+            typingArticleEl.textContent = vowels.includes(firstChar) ? 'an' : 'a';
+        }
 
         if (isDeleting) {
             typingEl.textContent = word.slice(0, --charIdx);
